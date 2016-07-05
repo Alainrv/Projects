@@ -1,0 +1,25 @@
+.form {
+	min-width: 600px;
+}
+
+.form fieldset {
+	margin-bottom: 16px;
+	border: none;
+}
+
+.form .label {
+	width: 130px;
+	display: inline-block;
+}
+
+.form .input {
+	display: inline-block;
+}
+
+.form .row {
+	display: flex;
+}
+
+.form .input input {
+	display: inline-block;;
+}

@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+
+<div class="form application">
+	<fieldset>
+	    <div class="row">
+			<div class="label"><label> Prénom-Nom :</label></div>
+			<div class="input">[text your-name]</div>
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<div class="row">
+			<div class="label"><label>Adresse :</label></div>
+			<div class="input">
+				<div>[text your-street placeholder "Rue"]</div>
+				<div>[text your-city placeholder "Ville"]</div>
+				<div>[text your-province placeholder "Province"]</div>
+				<div>[text your-postal placeholder "Code Postal"]</div>
+			</div>
+		</div>
+	</fieldset>
+ 
+	<fieldset>
+		<div class="row">
+			<div class="label"><label>Téléphone :</label></div>
+			<div class="input">
+				<div>[text* home-p1 3/3  placeholder "000"][text* home-p2 3/3 placeholder "000"][text* home-p3 4/4 placeholder "0000"]</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="label"><label>Tel Résidence :</label></div>
+			<div class="input">
+				<div><span>(</span>[text cell-p2 3/3 placeholder "000"]<span>)</span>[text cell-p3 4/4 placeholder "0000"]</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="label"><label>Fax :</label></div>
+			<div class="input">
+				<div>[tel your-fax placeholder  " Fax"]</div>
+			</div>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<div class="row">
+			<div class="label"><label>Courriel :</label></div>
+			<div class="input">
+				<div>[email your-email placeholder "E-mail" ]</div>
+			</div>
+		</div>
+	</fieldset>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="double"  style="margin-bottom:5px">
+		<div style="position:relative; display:inline-block; padding-right:22px;">Site internet :</div>
+		<div style="position:relative; display:inline-block;margin-right:5px;">[text your-Website]</div>
+	</div>
+
+	
+
+
+
+
+<div class="double"  style=" overflow: visible;">
+ <div class="left"><span style="float:left;">Sexe  </span> 
+  
+		<div class="w-form-row no_icon" style="line-height:50%; margin-left:58px;">
+		[radio radio-Gender use_label_element "Homme" "Femme"]
+		</div>
+
+ </div> 
+</div><br>
+
+
+<div class="double">
+  <div class="left">Association (s) professionnelles:<br />[text Professional-Association 50/]</div> 
+  <div class="left">Numéro de membre:<br /> [text your-Membership 50/]</div>
+</div>
+
+
+
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Permis de psychothérapeute :   </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; margin-left:58px;">
+		[radio radio-PsychotheraPermit use_label_element "Yes" "No"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+<div class="double">
+  <div class="left">Numéro de permis:<br />[text Permit-text 50/]</div> 
+  <div class="left">Nombre d’années de pratique :<br /> [text Years-in-Practice 50/]</div>
+</div>
+
+
+
+
+
+
+		
+	 <div style="margin-bottom:5px; overflow:hidden;">
+		<div class="left"><span style="padding-top:40px;margin-bottom:15px; float: left;"><strong>Heures de bureau/disponibilité :</strong>  Veuillez indiquer les jours et les heures de disponibilité (incluant les soirs et le samedi et dimanche).  </span> <br>
+			
+		</div>
+		
+		
+			<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:36px; "><strong>Lundi</strong>   :</div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Monday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Monday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:33px; "><strong>Mardi</strong>   :</div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Tuesday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Tuesday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:14px; "><strong>Mercredi  :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Wednesday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Wednesday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:35px; "><strong>Jeudi   :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Thursday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Thursday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:14px; "><strong>Vendredi   :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Friday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Friday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:24px; "><strong>Samedi   :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Saturday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Saturday-Hour placeholder "hh:mn"]</div>
+		</div>
+		
+		<div class="left"> 
+			<div style="position:relative; display:inline-block;padding-left:0px; padding-right:9px; "><strong>Dimanche   :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px; padding-right:10px; width: 31.5%;">[date Sunday-date ]</div>
+		
+			<div style="position:relative; display:inline-block;padding-left:10px; padding-right:10px;"> <strong>heure :</strong></div>
+			<div style="position:relative; display:inline-block;margin-right:5px;  width: 30.7%;">[text Sunday-Hour placeholder "hh:mn"]</div>
+		</div>		
+	</div><br>
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	<div class="double">
+		 <div class="left"  >
+		<strong>Diplômes universitaires:  </strong><br />
+		</div> 		
+	</div>
+	
+	<div class="double">		
+		<div class="left">
+		Veuillez cocher tous les choix qui s’appliquent.  <br />
+		</div> 
+	</div>
+	
+	
+	
+<div class="double">
+  <div class="left">
+  <table border="0" style="width:100%">
+  <tr>
+      <td>[checkbox issuesBA-BSc class:issuescheck use_label_element "BA/BSc."  ]
+	  </td>    
+      <td> 
+		<div style=" position:relative; display:inline-block; margin-top: 9px; margin-right: 17px;">– veuillez indiquer la discipline :</div>
+		<div style="position:relative; display:inline-block; line-height: 40px; ">[text your-BA-BSc]</div>
+	  </td> 
+
+  </tr>
+  
+   <tr>
+    <td>[checkbox issuesBSW1 class:issuescheck use_label_element "B.Serv.Soc." ]</td>   
+    <td>[checkbox issuesBSN class:issuescheck use_label_element "B.Sc.Inf." ]</td> 
+
+  </tr>
+  
+</table>
+
+  </div> 
+</div><br /><br /><br />
+
+
+
+<div class="double">
+  <div class="left">
+  <table border="0" style="width:100%">
+  <tr>
+      <td>[checkbox issuesMA-MSc class:issuescheck use_label_element "MA/MSc."  ]
+	  </td>    
+      <td> 
+		<div style=" position:relative; display:inline-block; margin-top: 9px; margin-right: 11px;">– veuillez indiquer la discipline :</div>
+		<div style="position:relative; display:inline-block; line-height: 40px; ">[text your-MA-MSc]</div>
+	  </td> 
+
+  </tr>
+  
+   <tr>
+    <td>[checkbox issuesBSW2 class:issuescheck use_label_element "B.Sc.Inf." ]</td>   
+    <td>[checkbox issuesMD class:issuescheck use_label_element "MD" ]</td> 
+
+  </tr>
+  
+</table>
+
+  </div> 
+</div><br /><br /><br />
+
+
+
+
+<div class="double">
+  <div class="left">
+  <table border="0" style="width:100%">
+  <tr>
+      <td>[checkbox issuesPhDPsyD class:issuescheck use_label_element "PhD./PsyD."  ]
+	  </td>    
+      <td> 
+		<div style=" position:relative; display:inline-block; margin-top: 9px;">– veuillez indiquer la discipline :</div>
+		<div style="position:relative; display:inline-block; line-height: 40px; ">[text your-nameindicate]</div>
+	  </td> 
+
+  </tr>
+  
+   <tr>
+    <td>[checkbox issuesDSW class:issuescheck use_label_element "D.Serv.Soc." ]</td>   
+  </tr>
+  
+  <tr>  
+    <td>[checkbox issuesOther class:issuescheck use_label_element "Autre" ]</td> 
+	<td> 
+		<div style="position:relative; display:inline-block; line-height: 100px; margin-left:40px;  ">[text your-issuesOther]</div>
+	  </td> 
+  </tr>
+  
+</table>
+
+  </div> 
+</div>
+
+
+
+
+
+	
+	<div class="double">
+		 <div class="left"  style="padding-bottom:0px";>
+		<strong>Formation(s) additionnelle(s) : </strong><br />
+		</div> 		
+	</div>
+	
+	
+	<div class="double">
+		<div class="left">
+		(par ex., programme de perfectionnement post-gradué, EMDR, hypnose, pour laquelle un diplôme/certificat a été émis.) <br />
+		[textarea your-Additional-Training]
+		</div>
+	</div>
+	
+	
+	
+	<div class="double">
+	 <div class="left"><span style="float: left; margin-top:20px;"><strong>Assurance responsabilité professionnelle:  :</strong>   </span><br /> 
+		<table border="0" style="width:100%">
+		  <tr>
+			<td>
+				<div class="w-form-row no_icon" style=" line-height:50%; margin-left:58px;">
+				[radio radio-Malpractice use_label_element "Oui" "Non"]
+				</div>
+			</td>     
+		   
+		  </tr>
+		</table>
+	 </div> 
+	</div>
+	
+	
+	
+	
+	<div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block; margin-top: 9px;"> <strong>COMPAGNIE  :</strong></div>
+		<div style="position:relative; display:inline-block; line-height: 40px; ">[text your-COMPAGNIE]</div><br>
+	</div>	
+	
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Langues parlées en contexte thérapeutique :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox issuesArabic class:issuescheck use_label_element "Arabe " ]
+    </td>
+    <td>[checkbox issuesFrench class:issuescheck use_label_element "Français" ] 
+    </td> 
+	
+	<td>[checkbox issuesKorean class:issuescheck use_label_element "Coréen " ]
+    </td>
+    <td>[checkbox issuesVietnamese class:issuescheck use_label_element "Vietnamien " ] 
+    </td> 
+  </tr>
+  
+    <tr>
+    <td>[checkbox issuesChinese class:issuescheck use_label_element "Chinois " ]
+    </td>
+    <td>[checkbox issuesItalian class:issuescheck use_label_element "Italien " ] 
+    </td> 
+	
+	<td>[checkbox issuesPortuguese class:issuescheck use_label_element "Portuguais" ]
+    </td>
+  
+  </tr>
+  
+      <tr>
+    <td>[checkbox issuesEnglish class:issuescheck use_label_element "Anglais " ]
+    </td>
+    <td>[checkbox issuesJapanese class:issuescheck use_label_element "Japonais " ] 
+    </td> 
+	
+	<td>[checkbox issuesSpanish class:issuescheck use_label_element "Espagnol" ]
+    </td>
+  
+  </tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issues class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px;">[text issues-OtherLanguages]</div>
+
+
+  </div> 
+</div>
+	
+	
+	
+	
+	
+
+	
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Titre(s) professionnel(s) :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox ArtTherapist class:issuescheck use_label_element "Art Thérapeute   " ]
+    </td>
+    <td>[checkbox Nurse class:issuescheck use_label_element "Infirmier/ère " ] 
+    </td> 
+	
+	<td>[checkbox Psychotherapist class:issuescheck use_label_element "Psychothérapeute  " ]
+    </td>
+  </tr>
+  
+    <tr>
+    <td>[checkbox Counsellor class:issuescheck use_label_element "Thérapeute en relation d’aide  " ]
+    </td>
+    <td>[checkbox Psychologists class:issuescheck use_label_element "Psychologue  " ] 
+    </td> 
+	
+	<td>[checkbox Psychiatrist class:issuescheck use_label_element "Psychiatre " ]
+    </td>
+  
+  </tr>
+  
+      <tr>
+    <td>[checkbox MFT class:issuescheck use_label_element "Thérapeute conjugal et familial  " ]
+    </td>
+    <td>[checkbox Physician class:issuescheck use_label_element "Médecin  " ] 
+    </td> 
+	
+	<td>[checkbox SocialWorker class:issuescheck use_label_element "Travailleur social " ]
+    </td>
+  
+  </tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuesApplicableTitle class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text Applicable-Other]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Orientation(s) théorique(s) :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Behavioral class:issuescheck use_label_element "Comportementale   " ]
+    </td>
+    <td>[checkbox Existential class:issuescheck use_label_element "Existentielle  " ] 
+    </td> 
+	
+	<td>[checkbox Psychoanalytic class:issuescheck use_label_element "Psychoanalytique    " ]
+    </td>
+  </tr>
+  
+    <tr>
+    <td>[checkbox Cognitive class:issuescheck use_label_element "Cognitive  " ]
+    </td>
+    <td>[checkbox Humanistic class:issuescheck use_label_element "Humaniste   " ] 
+    </td> 
+	
+	<td>[checkbox Psychodynamic class:issuescheck use_label_element "Psychodynamique  " ]
+    </td>
+  
+  </tr>
+  
+      <tr>
+    <td>[checkbox Eclectic-Integrative class:issuescheck use_label_element "Éclectique/Intégrative " ]
+    </td>
+    <td>[checkbox Post-Modern  class:issuescheck use_label_element "Post-Moderne  " ] 
+    </td> 
+	
+	<td>[checkbox Systemic class:issuescheck use_label_element "Systémique  " ]
+    </td>
+  
+  </tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox Orientation-Other class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-Orientation]</div>
+
+
+  </div> 
+</div>
+	
+
+	
+	
+	
+	
+	
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Domaines de spécialité :</strong></span><br /> 
+<div class="left"><span style="padding-bottom:10px;float: left;"><strong>Dépendances :</strong></span><br />    
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Alcoholism class:issuescheck use_label_element "Alcoolisme    " ]
+    </td>
+    <td>[checkbox Gambling class:issuescheck use_label_element "Jeu compulsif   " ] 
+    </td> 
+	
+	<td>[checkbox Abuse-Dependency class:issuescheck use_label_element "Abus de substance / Dépendance " ]
+    </td>
+  </tr>
+  
+    <tr>
+    <td>[checkbox ACOA class:issuescheck use_label_element "Enfants d’une personne alcoolique   " ]
+    </td>
+    <td>[checkbox Co-dependency class:issuescheck use_label_element "Dépendance affective " ] 
+    </td> 
+  </tr>
+  
+ 
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox AreasofSpecialty class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text Specialty-Other]</div>
+
+
+  </div> 
+</div>
+
+</div>
+
+
+
+
+
+
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problématiques ciblant les adolescents :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox AngerManagement class:issuescheck use_label_element "Gestion de la colère " ]
+    </td>
+    <td>[checkbox IdentityAdolescent class:issuescheck use_label_element "Identité   " ] 
+    </td> 
+  </tr>
+  
+    <tr>
+    <td>[checkbox Bullying class:issuescheck use_label_element "Intimidation  " ]
+    </td>
+    <td>[checkbox Sexual-Identity class:issuescheck use_label_element "Identité sexuelle   " ] 
+    </td> 
+	</tr>
+  
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuAdolescent class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text Adolescent-Other]</div>
+
+
+  </div> 
+</div>
+	
+	
+
+
+
+
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Troubles alimentaires :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Anorexia-Nervosa  class:issuescheck use_label_element "Anorexie  " ]
+    </td>
+    <td>[checkbox Bulimia class:issuescheck use_label_element "Boulimie    " ] 
+    </td> 
+  </tr>
+  
+    <tr>
+    <td>[checkbox Childhood-Feeding class:issuescheck use_label_element "Trouble de l'alimentation infantile  " ]
+    </td>
+    <td>[checkbox Obesity class:issuescheck use_label_element "Obésité  " ] 
+    </td> 
+	</tr>
+  
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuesDisorders class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text Eating-Other]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Troubles anxieux :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Agoraphobia class:issuescheck use_label_element "Agoraphobie " ]
+    </td>
+    <td>[checkbox Performance class:issuescheck use_label_element "Anxiété de performance " ] 
+    </td> 
+  </tr>
+  
+    <tr>
+		<td>[checkbox Generalized-Anxiety class:issuescheck use_label_element "Anxiété généralisée " ]
+		</td>
+		<td>[checkbox Social-Anxiety class:issuescheck use_label_element "Phobie/Anxiété sociale " ] 
+		</td> 
+	</tr>
+	
+	<tr>
+		<td>[checkbox Compulsive-Disorder class:issuescheck use_label_element "Trouble obsessive compulsif " ]
+		</td>
+		<td>[checkbox Specific-Phobia class:issuescheck use_label_element "Phobie spécifique  " ] 
+		</td> 
+	</tr>
+	
+	<tr>
+		<td>[checkbox Panic-Disorder class:issuescheck use_label_element "Trouble panique  " ]
+		</td>
+		
+	</tr>
+  
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox DisordersOther class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text Anxiety-Other]</div>
+
+
+  </div> 
+</div>
+
+
+
+	
+
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Troubles du comportement :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox ADHD class:issuescheck use_label_element "TDA/H" ]
+    </td>
+    <td>[checkbox Conduct-Disorder class:issuescheck use_label_element "Trouble des conduites   " ] 
+    </td> 
+	<td>[checkbox Defiant-Disorder class:issuescheck use_label_element "Trouble d’opposition   " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox Disruptive-Behaviour class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text yourBehaviour]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problématiques reliées aux maladies chroniques/fin de vie :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox AIDS-related class:issuescheck use_label_element "VIH/Sida " ]
+    </td>
+    <td>[checkbox Chronic-Fatigue class:issuescheck use_label_element "Fatigue chronique  " ] 
+    </td> 
+	
+	<td>[checkbox issuesMS class:issuescheck use_label_element "Sclérose en plaques " ]
+    </td>
+  </tr>
+  
+    <tr>
+    <td>[checkbox Alzheimers class:issuescheck use_label_element "Alzheimer " ]
+    </td>
+    <td>[checkbox Fibromyalgia class:issuescheck use_label_element "Fibromyalgie    " ] 
+    </td> 
+	
+	<td>[checkbox PainManagement class:issuescheck use_label_element "Gestion de la douleur  " ]
+    </td>
+  
+  </tr>
+  
+      <tr>
+    <td>[checkbox Cancer class:issuescheck use_label_element "Cancer " ]
+    </td>
+    <td>[checkbox Lupus class:issuescheck use_label_element "Lupus  " ] 
+    </td> 
+	
+	<td>[checkbox Parkinsons class:issuescheck use_label_element "Parkinson" ]
+    </td>
+  
+  </tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox ChronicHealth-Terminal class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-HealthTerminal]</div>
+
+
+  </div> 
+</div>
+	
+
+	
+	
+
+	
+	
+
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problèmes dans le couple:</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Abortion class:issuescheck use_label_element "Avortement " ]
+    </td>
+    <td>[checkbox Divorce class:issuescheck use_label_element "Divorce  " ] 
+    </td> 
+	
+	<td>[checkbox Fertility class:issuescheck use_label_element "Fertilité " ]
+    </td>
+  </tr>
+	
+    <tr>
+    <td>[checkbox Aging-Parents class:issuescheck use_label_element "Parents vieillissants " ]
+    </td>
+    <td>[checkbox Domestic-Violence class:issuescheck use_label_element "Violence conjugale   " ] 
+    </td> 
+	
+	<td>[checkbox Intimacy class:issuescheck use_label_element "Intimité " ]
+    </td>
+  
+  </tr>
+  
+   <tr>
+		<td>[checkbox Communication class:issuescheck use_label_element "Communication  " ]
+		</td>
+		<td>[checkbox Offender class:issuescheck use_label_element "(Agresseur)  " ] 
+		</td> 
+		
+		<td>[checkbox Military-Family class:issuescheck use_label_element "Vie militaire et impact sur les familles   " ]
+		</td> 
+	</tr>
+	
+	 <tr>
+		<td>[checkbox Discord class:issuescheck use_label_element "Divorce   " ]
+		</td>
+		<td>&nbsp;[checkbox Victim class:issuescheck use_label_element "(Victime)  " ] 
+		</td> 
+	</tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuesMaritalIssues class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-MaritalIssues]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problématiques reliées à la parentalité :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Adoption class:issuescheck use_label_element "Adoption   " ]
+    </td>
+    <td>[checkbox SingleParent class:issuescheck use_label_element "Monoparentalité " ] 
+    </td> 
+	<td>[checkbox Pregnancy class:issuescheck use_label_element "Grossesse non prévue " ] 
+    </td> 
+  </tr>
+  
+   <tr>
+    <td>[checkbox Co-parenting  class:issuescheck use_label_element "Co-parentalité   " ]
+    </td>
+    <td>[checkbox Step-families class:issuescheck use_label_element "Famille recomposée " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox ParentingIssues class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-ParentingIssues]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problèmes gériatriques :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox issuesAging class:issuescheck use_label_element "Vieillissement" ]
+    </td>
+    <td>[checkbox issuesRetirement class:issuescheck use_label_element "Prise de la retraite " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox GeriatricIssues class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-GeriatricIssues]</div>
+
+
+  </div> 
+</div>
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problématiques culturelles :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox FirstNations class:issuescheck use_label_element "Amérindiens " ]
+    </td>
+    <td>[checkbox PoliticalRefugees class:issuescheck use_label_element "Réfugiés politiques " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox CulturalIssues class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-CulturalIssues]</div>
+
+
+  </div> 
+</div>
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Trauma :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox CriticalIncident class:issuescheck use_label_element "Choc post-traumatique  " ]
+    </td>
+    <td>[checkbox traumaticStress class:issuescheck use_label_element "Stress post-traumatique " ] 
+    </td> 
+	<td>[checkbox RapeCrisis class:issuescheck use_label_element "Viol   " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuesTrauma class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-issuesTrauma]</div>
+
+
+  </div> 
+</div>
+	
+	
+	
+	
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Humeur :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox BipolarDisorder class:issuescheck use_label_element "Trouble bipolaire  " ]
+    </td>
+    <td>[checkbox Depressionissues class:issuescheck use_label_element "Depression  " ] 
+    </td> 
+	<td>[checkbox Post-partumDepression class:issuescheck use_label_element "Deuil " ] 
+    </td> 
+	
+  </tr>
+  
+  <tr>
+    <td>[checkbox SuicidalBehaviour class:issuescheck use_label_element "Comportement suicidaire   " ]
+    </td>
+	<td>[checkbox Post-partumDepression class:issuescheck use_label_element "Dépression post-partum   " ] 
+    </td> 
+   
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox Moodissues class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-Moodissues]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Troubles psychotiques :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Delusional class:issuescheck use_label_element "Troubles délirants" ]
+    </td>
+    <td>[checkbox Schizophrenia class:issuescheck use_label_element "Schizophrénie  " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox PsychoticDisorders class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-PsychoticDisorders]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left; "><strong>Troubles de la personnalité :</strong></span><br />  
+  <table border="0" style="width:100% ;  margin-bottom:40px; ">
+  <tr>
+    <td>[checkbox ClusterA class:issuescheck use_label_element "Cluster A  " ]
+    </td>
+    <td>[checkbox ClusterB  class:issuescheck use_label_element "Cluster B " ] 
+    </td> 
+	<td>[checkbox ClusterC  class:issuescheck use_label_element "Cluster C " ] 
+    </td> 
+  </tr>
+   
+</table>
+  
+
+  </div> 
+</div>
+
+
+
+
+
+
+<div class="double"  >
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Problématiques reliées à la famille d’origine :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Adoptionissues class:issuescheck use_label_element "Adoption " ]
+    </td>
+    <td>[checkbox Divorceissues class:issuescheck use_label_element "Divorce " ] 
+    </td> 
+	<td>[checkbox Incestissues class:issuescheck use_label_element "Inceste  " ] 
+    </td> 
+	<td>[checkbox Relationshipissues class:issuescheck use_label_element "Relations  " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox FamilyOrigin class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-FamilyOrigin]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+
+<div class="double"  >
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Sexualité  :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox Gay-Lesbian class:issuescheck use_label_element "LGBT" ]
+    </td>
+    <td>[checkbox GenderIdentity class:issuescheck use_label_element "Identité de genre   " ] 
+    </td> 
+	<td>[checkbox SexualIdentity class:issuescheck use_label_element "Identité  sexuelle   " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox issuSexuality class:issuescheck use_label_element "Autre(s):" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-issuSexuality]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+<div class="double"  >
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Counselling de carrière :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox ExecutiveCoaching class:issuescheck use_label_element "Coaching exécutif  " ]
+    </td>
+    <td>[checkbox PerformanceEnhancement class:issuescheck use_label_element "Augmentation de la productivité  " ] 
+    </td> 
+  </tr>
+  
+   <tr>
+    <td>[checkbox LifeManagement class:issuescheck use_label_element "Gestion carrière/vie personnelle " ]
+    </td>
+    <td>[checkbox SportsPsychology class:issuescheck use_label_element "Psychologie  du sport  " ] 
+    </td> 
+  </tr>
+   
+</table>
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox CareerCounselling class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-CareerCounselling]</div>
+
+
+  </div> 
+</div>
+
+
+
+
+
+	
+	
+<div class="double">
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Croissance personnelle :</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox AngerManagement class:issuescheck use_label_element "Gestion de la colère" ]
+    </td>
+    <td>[checkbox Relationship-Issues class:issuescheck use_label_element "Problèmes relationnels " ] 
+    </td> 
+	
+	<td>[checkbox issuesSpirituality class:issuescheck use_label_element "Spiritualité " ]
+    </td>
+  </tr>
+  
+    <tr>
+    <td>[checkbox EmotionalGrowth class:issuescheck use_label_element "Croissance émotionnelle " ]
+    </td>
+    <td>[checkbox Self-esteem  class:issuescheck use_label_element "Estime de soi  " ] 
+    </td> 
+	
+	<td>[checkbox Stress-Management class:issuescheck use_label_element "Gestion du stres" ]
+    </td>
+  
+  </tr>
+  
+      <tr>
+    <td>[checkbox IdentitIssues class:issuescheck use_label_element "Problèmes identitaires  " ]
+    </td>
+    <td>[checkbox SmokingCessation  class:issuescheck use_label_element "Arrêt du tabagisme   " ] 
+    </td> 
+  
+  </tr>
+  
+</table>
+
+
+   
+	<div style=" position:relative; display:inline-block; padding-right:0px;">[checkbox PersonalGrowth class:issuescheck use_label_element "Autre(s) :" ]</div>
+		<div style="position:relative; display:inline-block; margin-bottom:40px; ">[text your-PersonalGrowth]</div>
+
+
+  </div> 
+</div>
+
+
+
+	
+	
+	
+<div class="double">
+		 <div class="left"  style="padding-bottom:0px";>
+		<strong>Autres domaines de spécialité : </strong><br />
+		</div> 		
+</div>
+	
+	
+<div class="left" style="margin-bottom:40px; width:60%; " >
+		 <br />
+		[textarea your-Areas-Specialty ]
+</div>
+		
+		
+
+
+<div class="double"  >
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Méthodes de traitements:</strong></span><br />  
+  <table border="0" style="width:100%">
+  <tr>
+    <td>[checkbox  Step-12 class:issuescheck use_label_element "12 étapes " ]
+    </td>
+    <td>[checkbox EriksonianHypnosis class:issuescheck use_label_element "Hypnose éricksonienne  " ] 
+    </td> 
+  </tr>
+  
+   <tr>
+		<td>[checkbox AdlerianPsychotherapy class:issuescheck use_label_element "Psychothérapie adlérienne   " ]
+		</td>
+		<td>[checkbox ExistentialPsychotherapy class:issuescheck use_label_element "Psychothérapie existentielle " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox issuesArtTherapy class:issuescheck use_label_element "Art Thérapie " ]
+		</td>
+		<td>[checkbox Therapyounselling class:issuescheck use_label_element "Thérapie familiale " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox issuesBiofeedback class:issuescheck use_label_element "Biofeedback   " ]
+		</td>
+		<td>[checkbox FeministTherapy class:issuescheck use_label_element "Thérapie féministe  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox BriefTherapy class:issuescheck use_label_element "Thérapie brève " ]
+		</td>
+		<td>[checkbox BriefTherapyGestalt class:issuescheck use_label_element "Thérapie Gestalt " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox ChildAdvocacy class:issuescheck use_label_element "Protection de la Jeunesse   " ]
+		</td>
+		<td>[checkbox Goal-oriented class:issuescheck use_label_element "Thérapie orientée vers les solutions  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox ChristianPsychotherapy class:issuescheck use_label_element "Psychothérapie chrétienne  " ]
+		</td>
+		<td>[checkbox GroupTherapy class:issuescheck use_label_element "Thérapie de groupe " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox issuCoaching class:issuescheck use_label_element "Coaching   " ]
+		</td>
+		<td>[checkbox GuidedImagery class:issuescheck use_label_element "Imagerie mentale " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox CognitiveBehavioral class:issuescheck use_label_element "Thérapie cognitivo-comportementale  " ]
+		</td>
+		<td>[checkbox HolisticTherapy class:issuescheck use_label_element "Thérapie holistique  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox CoupleTherapy-Counselling class:issuescheck use_label_element "Thérapie de couple " ]
+		</td>
+		<td>[checkbox isHypnotherapy class:issuescheck use_label_element "Hypnothérapie " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox CriticalIncident class:issuescheck use_label_element "Intervention de crise après un incident traumatique " ]
+		</td>
+		<td>[checkbox IQTests class:issuescheck use_label_element "Tests d’intelligence   " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox CustodyEvaluation class:issuescheck use_label_element "Tests psychométriques " ]
+		</td>
+		<td>[checkbox JungianPsychoanalysis class:issuescheck use_label_element "Psychoanalyse jungienne " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox DanceTherapy class:issuescheck use_label_element "Thérapie par la dance " ]
+		</td>
+		<td>[checkbox MarriageTherapy class:issuescheck use_label_element "Thérapie maritale  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox DialecticalBehaviour class:issuescheck use_label_element "Thérapie comportementale dialectique" ]
+		</td>
+		<td>[checkbox MassageTherapy class:issuescheck use_label_element "Thérapie par le massage  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox issuesEMDR class:issuescheck use_label_element "EMDR " ]
+		</td>
+		<td>[checkbox issuMediation class:issuescheck use_label_element "Médiation" ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox MusicTherapy class:issuescheck use_label_element "Thérapie par la musique" ]
+		</td>
+		<td>[checkbox Psychopharmacologicalherapy class:issuescheck use_label_element "Traitement psychopharmacologique 
+(évaluations psychosociale et médico-légales réalisées par un médecin uniquement) " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox NarrativeTherapy class:issuescheck use_label_element "Thérapie narrative  " ]
+		</td>
+		<td>[checkbox issuPsychotherapy class:issuescheck use_label_element "Psychothérapie  " ] 
+		</td> 
+    </tr>
+	
+	
+	<tr>
+		<td>[checkbox ParentTraining class:issuescheck use_label_element "Enseignement des pratiques parentales saines " ]
+		</td>
+		<td>[checkbox PsychoeducationalAssessments class:issuescheck use_label_element "Évaluations psychoéducatives  " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox PastoralCounselling class:issuescheck use_label_element "Counselling pastoral " ]
+		</td>
+		<td>[checkbox issRealityTherapy class:issuescheck use_label_element "Thérapie de la réalité" ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox PersonalityTesting class:issuescheck use_label_element "Tests de personnalité" ]
+		</td>
+		<td>[checkbox issueSexTherapys class:issuescheck use_label_element "Thérapie sexuelle " ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox Playherapy class:issuescheck use_label_element "Thérapie par le jeu" ]
+		</td>
+		<td>[checkbox issuSubstanceAbuse class:issuescheck use_label_element "Évaluation pour abus de substance  " ] 
+		</td> 
+    </tr>
+	
+	
+	<tr>
+		<td>[checkbox issPsychoanalysisues class:issuescheck use_label_element "Psychoanalyse" ]
+		</td>
+		<td>[checkbox ThoughtField class:issuescheck use_label_element "Expertise psycholégale pour la garde d’enfants" ] 
+		</td> 
+    </tr>
+	
+	<tr>
+		<td>[checkbox issPsychodymanicTherapy" class:issuescheck use_label_element "Thérapie psychodynamique" ]
+		</td>
+		<td>[checkbox ioughtFieldTherapy class:issuescheck use_label_element "Thérapie des champs de pensée" ] 
+		</td> 
+    </tr>
+   
+</table>
+   
+
+  </div> 
+</div>
+
+
+
+
+
+<div class="double" style="margin-bottom:5px;"  ><br><br>
+  <div class="left"><span style="padding-bottom:10px;float: left;"><strong>Types de clientèles :</strong></span><br />  
+  <table border="0" style="width:100%">
+	  <tr>
+		<td>[checkbox issAdolescentsues class:issuescheck use_label_element "Adolescents  " ]</td> 
+	  </tr>
+	  
+	  <tr>
+		<td>[checkbox issAdultsues class:issuescheck use_label_element "Adultes  " ] </td> 
+	  </tr>
+	  
+	  <tr>
+		<td>[checkbox issChildrenues class:issuescheck use_label_element "Enfants  " ] </td> 
+	  </tr>
+	  
+	  
+	  <tr>
+		<td>[checkbox issCouplesues class:issuescheck use_label_element "Couples   " ] </td> 
+	  </tr>
+	  
+	  
+	  <tr>
+		<td>[checkbox issFamiliesues class:issuescheck use_label_element "Familles   " ] </td> 
+	  </tr>
+	  
+	  
+	  
+	 <tr>
+		<td>[checkbox issuGroupses class:issuescheck use_label_element "Groupes   " ] </td> 
+	  </tr>
+	  
+	  <tr>
+		<td>[checkbox issSeniorsues class:issuescheck use_label_element "Personnes âgées    " ] </td> 
+	  </tr>
+	  
+	</table>
+</div>
+</div> <br> <br>
+
+
+
+	<div class="double">
+		 <div class="left"  style="padding-bottom:10px";>
+		<strong>Couverture d’assurances : </strong><br />
+		</div> 		
+	</div>
+	
+	
+	<div class="double" style="padding-bottom:25px">
+		<div class="left">
+		 Si vous êtes couverts par un (des) programme(s) d’aide aux employés et/ou compagnie(s) d’assurances, veuillez l’indiquer ci-bas.  <br />
+		</div>
+	</div>
+	
+	
+	
+	<div class="double">
+		 <div class="left"  style="padding-bottom:10px";>
+		<strong>Programmes d’aide aux employés : </strong><br />
+		</div> 		
+	</div>
+
+  <div class="double"  style="margin-bottom:-8px">
+  <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>1.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name11]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>4.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name14]</div>
+	</div>
+  </div>
+  
+  
+    <div class="double" style="margin-bottom:-8px">
+  <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>2.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name12]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>5.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name15]</div>
+	</div>
+  </div>
+  
+  
+    <div class="double">
+  <div class="left" style="margin-bottom:-8px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>3.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name13]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>6.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name16]</div>
+	</div>
+  </div>
+  
+  
+  
+
+  
+  
+  
+  <div class="double">
+		 <div class="left"  style="padding-bottom:10px";>
+		<strong>Compagnies d’assurances : </strong><br />
+		</div> 		
+	</div>
+	
+
+
+
+ <div class="double"  style="margin-bottom:-8px">
+  <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>1.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name21]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>4.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name24]</div>
+	</div>
+  </div>
+  
+  
+    <div class="double" style="margin-bottom:-8px">
+  <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>2.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name22]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>5.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name25]</div>
+	</div>
+  </div>
+  
+  
+    <div class="double">
+  <div class="left" style="margin-bottom:-8px">
+		<div style=" position:relative; display:inline-block;padding-left:1px;"><strong>3.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name23]</div>
+	</div>
+	 <div class="left" style="margin-bottom:0px">
+		<div style=" position:relative; display:inline-block;padding-left:-25px; "><strong>6.</strong> </div>
+		<div style="position:relative; display:inline-block; ">[text your-name26]</div>
+	</div>
+  </div>
+  
+  
+  
+  <div class="double">
+		 <div class="left"  style="padding-bottom:10px";>
+		<strong>Groupes  : </strong><br />
+		</div> 		
+	</div>
+	
+	
+	<div class="double" style="padding-bottom:25px">
+		<div class="left">
+		 Si vous animez des groupes thérapeutiques ou psychoéducatifs, veuillez inscrire un apercu dans l’espace ci-dessous.  <br />
+		</div>
+	</div>
+	
+	
+	   <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:70px;"><strong>1. Titre: </strong> </div>
+		<div style="position:relative; display:inline-block;margin-right:15px; width: 30%;">[text your-nameTitle1 ]</div>
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;"><strong>Coût:</strong></div>
+		<div style="position:relative; display:inline-block;margin-right:5px; width: 23.7%;">[number   your-CostTitle1 ]</div>
+	  </div>
+
+	  <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;">Brève description:   </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-Description1 ]</div>
+	</div>
+	
+	   <div style="margin-bottom:35px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:7px;">Critères de la clientèle visée  :  </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-Criteria1 ]</div>	
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	  <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:70px;"><strong>2. Titre: </strong> </div>
+		<div style="position:relative; display:inline-block;margin-right:15px; width: 30%;">[text your-nameTitle2 ]</div>
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;"><strong>Coût:</strong></div>
+		<div style="position:relative; display:inline-block;margin-right:5px; width: 23.7%;">[number   your-CostTitle2 ]</div>
+	  </div>
+
+	  <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;">Brève description :   </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-nameBrief ]</div>
+	</div>
+	
+	   <div style="margin-bottom:35px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:7px;">Critères de la clientèle visée  :  </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-nameCriteria ]</div>	
+	 </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	 <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:70px;"><strong>3. Titre: </strong> </div>
+		<div style="position:relative; display:inline-block;margin-right:15px; width: 30%;">[text your-nameTitle3 ]</div>
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;"><strong>Coût:</strong></div>
+		<div style="position:relative; display:inline-block;margin-right:5px; width: 23.7%;">[number  your-CostTitle3 ]</div>
+	  </div>
+
+	 <div style="margin-bottom:5px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:5px;">Brève description :   </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-Description3 ]</div>
+	</div>
+	
+	   <div style="margin-bottom:45px">
+		<div style=" position:relative; display:inline-block;padding-left:0px;  padding-right:7px;">Critères de la clientèle visée   :  </div>
+		<div style="position:relative; display:inline-block;margin-right:35px;  width:59%;">[text your-Criteria3 ]</div>	
+	 </div>
+	
+	
+	
+<div class="double">
+ <div class="left"><span style="float: left;  margin-top:50px;">Êtes-vous confortables de vous déplacer dans le Grand Montréal pour rencontrer les clients?  </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-willing1 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Offrez-vous de la thérapie par téléphone?   </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-willing2 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Offrez-vous de la thérapie en ligne?   </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-provide1 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Acceptez-vous de faire des rencontres à domicile?  </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-clients1 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+
+
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Donnez-vous des ateliers ou autres formations reliés à vos domaines de spécialité?    </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-workshops1 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+
+
+<div class="double">
+ <div class="left"><span style="float: left;">Êtes-vous intéressé(e) à donner des conférences éducatives à des groupes de la communauté?   </span><br /> 
+  <table border="0" style="width:100%">
+  <tr>
+    <td>
+		<div class="w-form-row no_icon" style=" line-height:50%; padding-left: 0;">
+		[radio radio-community1 use_label_element "Oui" "Non"]
+		</div>
+    </td>     
+   
+  </tr>
+</table>
+ </div> 
+</div>
+
+
+
+	
+<div class="double">
+		 <div>
+		Veuillez inscrire ci-dessous toute autre information pertinente que vous croyez appropriée pour définir   </div> 
+	<div   style="padding-bottom:5px";>
+		le type de références que vous souhaiteriez le plus recevoir: 
+		</div> 			
+
+</div>
+	
+	
+<div class="left" style="margin-bottom:40px; width:60%; " >
+		 <br />
+		[textarea your-assistmessage ]
+</div>
+	
+
+	
+ <div class="double"  style="margin-bottom:30px">
+		<div style=" position:relative; display:inline-block;padding-left:5px; padding-right:41px;"><strong>Joindre votre CV:</strong></div>
+		<div style="position:relative; display:inline-block; margin-left: 0px;  ">[file file-attachment]</div>
+</div>
+
+	
+	
+
+	
+	
+	<div class="double">
+	<div style="position:relative; display:inline-block; margin-bottom:0;">[text your-Signature]</div><br>
+	</div>
+	<div class="double"    style=" margin-top: -19px; margin-left: 84px;">
+		 <div class="left">
+		<strong>Signature du candidat    </strong><br />
+		</div> 		
+	</div>
+	
+	
+		
+<div class="double">		
+	<hr width="100%" align="left">
+
+[submit class:submitbtn "Submit"]
+
+</div>
+
+</body>
+</html>
